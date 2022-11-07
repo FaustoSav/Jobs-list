@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'League Spartan', sans-serif;
+
+  }
+
+  body {
+    background-color: hsl(180, 52%, 96%);
+    min-width: 280px;
+    position: relative;
+  }
+
+  
+  
+
+}
+
+@layer components {
+  .job-component {
+
+    @apply flex flex-col bg-white rounded-md shadow-xl p-4 divide-y-2 last-of-type:mb-10 sm:flex-row sm:divide-y-0 sm:justify-between sm:items-center sm:max-w-[1440px] mx-auto
+  }
+
+  .filter {
+    @apply flex  gap-x-2 bg-white rounded-md shadow-xl p-4 -translate-y-6 justify-between  w-full  items-center  sm:max-w-[1440px] mx-auto
+   }
+
+  .new {
+    @apply text-lightGray bg-desaturedCyan text-xs h-fit mr-2 px-2 pt-1 rounded-xl sm:text-sm
+  }
+
+  .featured {
+    @apply text-lightGray bg-veryDarkGray text-xs h-fit pt-1 px-2 rounded-xl sm:text-sm
+  }
+
+  .position {
+    @apply font-bold text-sm mb-2 text-veryDarkGray sm:text-base
+  }
+
+  .requirement {
+    @apply mb-2 px-3 pt-1.5 pb-1 text-xs font-bold text-desaturedCyan tracking-tight bg-bgColor rounded hover:text-bgColor hover:bg-desaturedCyan hover:cursor-pointer sm:h-8 sm:text-sm
+  }
+ .filter-requirement{
+  @apply text-desaturedCyan text-custom tracking-tight bg-bgColor  rounded   font-bold flex  pl-2 sm:text-base
+ }
+ .clear-button{
+  @apply text-darkGray font-bold text-sm hover:cursor-pointer px-1 hover:underline hover:text-desaturedCyan
+ }
+  .delete-requirement{ 
+    @apply w-full h-full  text-white bg-desaturedCyan px-2 rounded-r hover:bg-veryDarkGray hover:cursor-pointer
+  }
+  
+}
